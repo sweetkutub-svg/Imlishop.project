@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imli Mix - Premium Tamarind Blends | Imli Mix Kar, Mood Fix Kar!</title>
+    <meta name="description" content="Premium handcrafted tamarind blends with authentic Indian flavors. Free shipping, natural ingredients, made in India.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌶️</text></svg>">
+</head>
+<body>
+    <!-- Limited Time Offer Banner -->
+    <div class="offer-banner" id="offerBanner">
+        <div class="container">
+            <span class="offer-text">🔥 Flash Sale: Buy 2 Get 1 Free - Limited Stock! </span>
+            <span class="countdown" id="countdown">23:59:45</span>
+            <button class="close-banner" onclick="document.getElementById('offerBanner').style.display='none'">&times;</button>
+        </div>
+    </div>
+
+    <!-- Topbar -->
+    <div class="topbar">
+        🚚 Free Shipping Pan-India | 📦 Premium Packaging | 🌱 Daily Fresh Batches | 🔒 100% Secure Payments
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    Imli Mix
+                    <span class="logo-tagline">Premium Tamarind Blends</span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#variants">Products</a></li>
+                    <li><a href="#combos">Combo Packs</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="mini-cart" id="miniCart">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="mobile-toggle" id="mobileToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="social-proof-ticker">
+                    <span>📈 2000+ Happy Customers | ⭐ 4.8/5 Rating | 🇮🇳 Made in India</span>
+                </div>
+                
+                <h1>India's Premium Tamarind Mix</h1>
+                <p class="tagline">Imli Mix Kar, Mood Fix Kar!</p>
+                <p class="hero-description">
+                    Handcrafted tamarind blends with authentic spices - perfect balance of sweet, tangy & spicy. 
+                    Your childhood memories in premium packaging!
+                </p>
+                
+                <div class="hero-image">
+                    <img src="1st.jpg" alt="Imli Mix Premium Product" />
+                    <div class="stock-indicator">
+                        <span class="stock-text">⚡ Only 47 packs left in stock!</span>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#variants" class="cta-button primary">
+                        Order Now - ₹299 Only
+                        <span class="cta-subtext">Free Shipping + 7-Day Return</span>
+                    </a>
+                    <a href="#variants" class="cta-button secondary">View All Variants</a>
+                </div>
+                
+                <div class="badges">
+                    <span class="badge">✅ No Preservatives</span>
+                    <span class="badge">🌿 100% Natural</span>
+                    <span class="badge">🇮🇳 Made in India</span>
+                    <span class="badge">🔒 Secure Payment</span>
+                </div>
+
+                <div class="trust-signals">
+                    <img src="1st.jpg" alt="SSL Secured" class="trust-badge">
+                    <img src="1st.jpg" alt="Made in India" class="trust-badge">
+                    <img src="1st.jpg" alt="ISO Certified" class="trust-badge">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Variants Section -->
+    <section class="variants" id="variants">
+        <div class="container">
+            <h2 class="section-title fade-in">Choose Your Perfect Blend</h2>
+            <p class="section-subtitle fade-in">
+                Every mood deserves its perfect flavor - from mild sweet to fiery hot explosion!
+            </p>
+            
+            <div class="variants-grid">
+                <div class="variant-card masala fade-in" data-variant="masala">
+                    <div class="variant-badge">Most Popular</div>
+                    <div class="variant-image">
+                        <img src="1st.jpg" alt="Masala Mixture Variant" />
+                    </div>
+                    <h3>Masala Mixture</h3>
+                    <span class="flavor-tag">Equal Balance</span>
+                    <p>Perfect harmony of sweet, tangy & spicy. The crowd favorite that pleases every palate in the family!</p>
+                    <div class="price-section">
+                        <span class="price">₹299</span>
+                        <span class="original-price">₹399</span>
+                        <span class="discount">25% OFF</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <span class="qty-display">1</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart" data-product="masala" data-price="299">Add to Cart</button>
+                    <button class="quick-view" data-product="masala">Quick View</button>
+                </div>
+
+                <div class="variant-card mitha fade-in" data-variant="mitha">
+                    <div class="variant-image">
+                        <img src="1st.jpg" alt="Mitha-Forward Variant" />
+                    </div>
+                    <h3>Mitha-Forward</h3>
+                    <span class="flavor-tag">Sweet Heavy</span>
+                    <p>Sweet lovers' favorite! Natural jaggery and dates - guilt-free sweetness with a tangy twist.</p>
+                    <div class="price-section">
+                        <span class="price">₹299</span>
+                        <span class="original-price">₹399</span>
+                        <span class="discount">25% OFF</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <span class="qty-display">1</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart" data-product="mitha" data-price="299">Add to Cart</button>
+                    <button class="quick-view" data-product="mitha">Quick View</button>
+                </div>
+
+                <div class="variant-card salt fade-in" data-variant="salt">
+                    <div class="variant-image">
+                        <img src="1st.jpg" alt="Salt-Forward Variant" />
+                    </div>
+                    <h3>Salt-Forward</h3>
+                    <span class="flavor-tag">Tangy Salty</span>
+                    <p>Tangy-salty explosion! Rock salt and dried mango powder - instant mouth-watering experience.</p>
+                    <div class="price-section">
+                        <span class="price">₹299</span>
+                        <span class="original-price">₹399</span>
+                        <span class="discount">25% OFF</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <span class="qty-display">1</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart" data-product="salt" data-price="299">Add to Cart</button>
+                    <button class="quick-view" data-product="salt">Quick View</button>
+                </div>
+
+                <div class="variant-card thika fade-in" data-variant="thika">
+                    <div class="variant-badge hot">🔥 Spicy Alert</div>
+                    <div class="variant-image">
+                        <img src="1st.jpg" alt="Thika-Forward Variant" />
+                    </div>
+                    <h3>Thika-Forward</h3>
+                    <span class="flavor-tag">Spicy Hot</span>
+                    <p>For the brave hearts! Premium red chili and special spice blend - dare to take the challenge?</p>
+                    <div class="price-section">
+                        <span class="price">₹299</span>
+                        <span class="original-price">₹399</span>
+                        <span class="discount">25% OFF</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <span class="qty-display">1</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart" data-product="thika" data-price="299">Add to Cart</button>
+                    <button class="quick-view" data-product="thika">Quick View</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combo Packs Section -->
+    <section class="combos" id="combos">
+        <div class="container">
+            <h2 class="section-title fade-in">Combo Packs - Better Value</h2>
+            <p class="section-subtitle fade-in">Save more when you buy together - perfect for families and gifting!</p>
+            
+            <div class="combo-grid">
+                <div class="combo-card family fade-in">
+                    <div class="combo-badge">Best Value</div>
+                    <div class="combo-images">
+                        <img src="1st.jpg" alt="Family Pack" />
+                    </div>
+                    <h3>Family Pack</h3>
+                    <p class="combo-description">All 4 variants (200g each) - perfect for the whole family</p>
+                    <div class="combo-pricing">
+                        <span class="combo-price">₹899</span>
+                        <span class="combo-original">₹1196</span>
+                        <span class="combo-savings">Save ₹297</span>
+                    </div>
+                    <button class="combo-cta">Add Family Pack</button>
+                </div>
+
+                <div class="combo-card couple fade-in">
+                    <div class="combo-images">
+                        <img src="1st.jpg" alt="Couple Pack" />
+                    </div>
+                    <h3>Couple's Choice</h3>
+                    <p class="combo-description">Pick any 2 variants (200g each) - perfect for trying</p>
+                    <div class="combo-pricing">
+                        <span class="combo-price">₹499</span>
+                        <span class="combo-original">₹598</span>
+                        <span class="combo-savings">Save ₹99</span>
+                    </div>
+                    <button class="combo-cta">Choose 2 Variants</button>
+                </div>
+
+                <div class="combo-card trial fade-in">
+                    <div class="combo-images">
+                        <img src="1st.jpg" alt="Trial Pack" />
+                    </div>
+                    <h3>Trial Pack</h3>
+                    <p class="combo-description">Mini sizes of all 4 variants (50g each) - taste before you buy big</p>
+                    <div class="combo-pricing">
+                        <span class="combo-price">₹249</span>
+                        <span class="combo-original">₹299</span>
+                        <span class="combo-savings">Save ₹50</span>
+                    </div>
+                    <button class="combo-cta">Try All Flavors</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title fade-in">What Our Customers Say</h2>
+            <div class="review-stats fade-in">
+                <div class="rating-overview">
+                    <span class="big-rating">4.8</span>
+                    <div class="stars">★★★★★</div>
+                    <p>Based on 2,143 reviews</p>
+                </div>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <img src="1st.jpg" alt="Customer" class="reviewer-photo">
+                        <div class="reviewer-info">
+                            <h4>Priya Sharma</h4>
+                            <span class="reviewer-location">Mumbai</span>
+                        </div>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <p class="review-text">"Absolutely delicious! The masala mixture brings back childhood memories. Quality is premium and packaging is excellent. Ordered again within a week!"</p>
+                    <div class="review-date">2 days ago</div>
+                </div>
+
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <img src="1st.jpg" alt="Customer" class="reviewer-photo">
+                        <div class="reviewer-info">
+                            <h4>Raj Kumar</h4>
+                            <span class="reviewer-location">Delhi</span>
+                        </div>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <p class="review-text">"The thika-forward variant is perfect for spice lovers! Fast delivery and the resealable pack keeps it fresh. Highly recommend!"</p>
+                    <div class="review-date">1 week ago</div>
+                </div>
+
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <img src="1st.jpg" alt="Customer" class="reviewer-photo">
+                        <div class="reviewer-info">
+                            <h4>Anita Gupta</h4>
+                            <span class="reviewer-location">Bangalore</span>
+                        </div>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <p class="review-text">"Ordered the family pack for Diwali. Everyone loved different variants. Natural ingredients and no artificial taste. Will definitely reorder!"</p>
+                    <div class="review-date">2 weeks ago</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">Why Choose Imli Mix?</h2>
+            
+            <div class="about-grid">
+                <div class="about-item fade-in">
+                    <div class="about-icon">🌿</div>
+                    <h3>Natural Ingredients</h3>
+                    <p>Only premium tamarind, organic jaggery, rock salt, and traditional spices. No artificial colors, no preservatives - pure goodness only!</p>
+                </div>
+                
+                <div class="about-item fade-in">
+                    <div class="about-icon">🚚</div>
+                    <h3>Pan-India Delivery</h3>
+                    <p>Free home delivery across India! From Kashmir to Kanyakumari - fresh batches reach you in 2-3 days with premium packaging.</p>
+                </div>
+
+                <div class="about-item fade-in">
+                    <div class="about-icon">🏆</div>
+                    <h3>Premium Quality</h3>
+                    <p>ISO certified facility, rigorous quality checks, and handcrafted in small batches to ensure consistent taste and freshness.</p>
+                </div>
+
+                <div class="about-item fade-in">
+                    <div class="about-icon">💰</div>
+                    <h3>Money Back Guarantee</h3>
+                    <p>Not satisfied? Get 100% refund within 7 days. We're confident you'll love our authentic flavors and premium quality!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title fade-in">Frequently Asked Questions</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        What is the shelf life and how should I store the product?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our Imli Mix has a shelf life of 6 months from manufacturing date. Store in a cool, dry place away from direct sunlight. The resealable pouch maintains freshness throughout!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        Is this product suitable for diabetics?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We use natural jaggery instead of refined sugar. However, we recommend consuming in moderation - a small portion daily is perfect for everyone!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        What is your return policy if I'm not satisfied?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer a 7-day money-back guarantee! If you're not completely satisfied, contact us for a full refund. But trust us - once you try it, you'll become a regular customer!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        Do you offer bulk orders or corporate gifting?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We offer special pricing for bulk orders above 50 units and custom packaging for corporate gifts. Contact us at hello@imlimix.com for details.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        What payment methods do you accept?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept all major credit/debit cards, UPI, net banking, wallets, and Cash on Delivery (COD) for orders above ₹299. All transactions are 100% secure!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Imli Mix</h3>
+                    <p>India's premium tamarind blend brand. Crafted with love, delivered with care - bringing authentic flavors to your doorstep!</p>
+                    <div class="email-capture">
+                        <input type="email" placeholder="Enter your email for updates" id="footerEmail">
+                        <button id="subscribeBtn">Subscribe</button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="#variants">Products</a></p>
+                    <p><a href="#combos">Combo Packs</a></p>
+                    <p><a href="#reviews">Reviews</a></p>
+                    <p><a href="#about">About Us</a></p>
+                    <p><a href="#faq">FAQ</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Customer Care</h3>
+                    <a href="mailto:1234skkutub@gmail.com">📧 1234skkutub@gmail.com</a> <br>
+                    <a href="tel:+916296888213">&#128241; +91 6296888213</a>
+                    <p>⏰ Mon-Sat: 9 AM - 7 PM</p>
+                    <p>🔒 100% Secure Payments</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Policies</h3>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Terms & Conditions</a></p>
+                    <p><a href="#">Return & Refund</a></p>
+                    <p><a href="#">Shipping Policy</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Imli Mix. All rights reserved. Made with ❤️ in India | ISO Certified Facility</p>
+                <div class="payment-icons">
+                    <img src="placeholder.jpg" alt="Visa" class="payment-icon">
+                    <img src="placeholder.jpg" alt="Mastercard" class="payment-icon">
+                    <img src="placeholder.jpg" alt="UPI" class="payment-icon">
+                    <img src="placeholder.jpg" alt="Paytm" class="payment-icon">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="1st.jpg" alt="Product" id="modalImage">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalTitle">Product Name</h3>
+                    <p id="modalDescription">Product description here...</p>
+                    <div class="modal-price">
+                        <span class="price" id="modalPrice">₹299</span>
+                        <span class="original-price">₹399</span>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="modal-cta primary">Add to Cart</button>
+                        <button class="modal-cta secondary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/916296888213" target="_blank" aria-label="Chat on WhatsApp">
+            💬
+        </a>
+    </div>
+
+    <script>
+        // Cart functionality
+        let cart = [];
+        let cartCount = 0;
+
+        // Mobile Navigation Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileToggle.classList.toggle('active');
+        });
+
+        // Countdown Timer
+        function startCountdown() {
+            const countdownElement = document.getElementById('countdown');
+            let timeLeft = 66215; // 22:15:45 in seconds
+
+            const timer = setInterval(() => {
+                const hours = Math.floor(timeLeft / 3600);
+                const minutes = Math.floor((timeLeft % 3600) / 60);
+                const seconds = timeLeft % 60;
+
+                countdownElement.textContent = 
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    countdownElement.textContent = "00:00:00";
+                }
+                timeLeft--;
+            }, 1000);
+        }
+
+        // FAQ Toggle
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const faqAnswer = question.nextElementSibling;
+                
+                // Close all other FAQ items
+                faqQuestions.forEach(otherQuestion => {
+                    if (otherQuestion !== question) {
+                        otherQuestion.parentElement.classList.remove('active');
+                        otherQuestion.nextElementSibling.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current FAQ item
+                faqItem.classList.toggle('active');
+                faqAnswer.classList.toggle('active');
+            });
+        });
+
+        // Quantity Selector
+        document.querySelectorAll('.quantity-selector').forEach(selector => {
+            const minusBtn = selector.querySelector('.minus');
+            const plusBtn = selector.querySelector('.plus');
+            const display = selector.querySelector('.qty-display');
+
+            minusBtn.addEventListener('click', () => {
+                let qty = parseInt(display.textContent);
+                if (qty > 1) {
+                    display.textContent = qty - 1;
+                }
+            });
+
+            plusBtn.addEventListener('click', () => {
+                let qty = parseInt(display.textContent);
+                display.textContent = qty + 1;
+            });
+        });
+
+        // Add to Cart Functionality
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const product = this.getAttribute('data-product');
+                const price = parseInt(this.getAttribute('data-price'));
+                const qtyElement = this.parentElement.querySelector('.qty-display');
+                const quantity = qtyElement ? parseInt(qtyElement.textContent) : 1;
+                
+                // Add to cart array
+                const existingItem = cart.find(item => item.product === product);
+                if (existingItem) {
+                    existingItem.quantity += quantity;
+                } else {
+                    cart.push({ product, price, quantity });
+                }
+                
+                // Update cart count
+                cartCount += quantity;
+                document.querySelector('.cart-count').textContent = cartCount;
+                
+                // Visual feedback
+                const originalText = this.textContent;
+                this.textContent = 'Adding...';
+                this.disabled = true;
+                
+                setTimeout(() => {
+                    this.textContent = 'Added! 🎉';
+                    this.style.background = 'linear-gradient(135deg, #5BA65D 0%, #E4B749 100%)';
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.style.background = '';
+                        this.disabled = false;
+                    }, 2000);
+                }, 1000);
+                
+                // Show toast
+                showToast(`${product.charAt(0).toUpperCase() + product.slice(1)} added to cart!`, 'success');
+            });
+        });
+
+        // Quick View Modal
+        const modal = document.getElementById('quickViewModal');
+        const closeModal = document.querySelector('.close-modal');
+
+        document.querySelectorAll('.quick-view').forEach(button => {
+            button.addEventListener('click', function() {
+                const product = this.getAttribute('data-product');
+                // Populate modal with product data
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Email Subscription
+        document.getElementById('subscribeBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const emailInput = document.getElementById('footerEmail');
+            const email = emailInput.value.trim();
+            
+            if (email && validateEmail(email)) {
+                this.textContent = 'Subscribed! ✓';
+                this.style.background = '#5BA65D';
+                emailInput.value = '';
+                showToast('Successfully subscribed to updates!', 'success');
+                
+                setTimeout(() => {
+                    this.textContent = 'Subscribe';
+                    this.style.background = '';
+                }, 3000);
+            } else {
+                emailInput.focus();
+                emailInput.style.border = '2px solid #D64545';
+                showToast('Please enter a valid email address', 'error');
+                setTimeout(() => {
+                    emailInput.style.border = '';
+                }, 2000);
+            }
+        });
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Card tilt effect on mouse move
+        document.querySelectorAll('.variant-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 20;
+                const rotateY = (centerX - x) / 20;
+                
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = '#FFFFFF';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // Toast notification system
+        function showToast(message, type = 'success') {
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            toast.textContent = message;
+            
+            document.body.appendChild(toast);
+            
+            // Trigger animation
+            setTimeout(() => toast.style.animation = 'slideInRight 0.5s ease', 10);
+            
+            setTimeout(() => {
+                toast.style.animation = 'slideOutRight 0.5s ease';
+                setTimeout(() => {
+                    if (document.body.contains(toast)) {
+                        document.body.removeChild(toast);
+                    }
+                }, 500);
+            }, 3000);
+        }
+
+        // Combo pack functionality
+        document.querySelectorAll('.combo-cta').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const comboType = this.textContent;
+                const originalText = this.textContent;
+                
+                this.textContent = 'Adding to Cart...';
+                this.disabled = true;
+                
+                setTimeout(() => {
+                    cartCount += comboType.includes('Family') ? 4 : comboType.includes('Couple') ? 2 : 4;
+                    document.querySelector('.cart-count').textContent = cartCount;
+                    
+                    this.textContent = 'Added! 🎉';
+                    this.style.background = 'linear-gradient(135deg, #5BA65D 0%, #E4B749 100%)';
+                    
+                    showToast(`${comboType} added to cart!`, 'success');
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.style.background = '';
+                        this.disabled = false;
+                    }, 2000);
+                }, 1000);
+            });
+        });
+
+        // Initialize on page load
+        window.addEventListener('load', () => {
+            startCountdown();
+            
+            // Stagger animation for variant cards
+            const variantCards = document.querySelectorAll('.variant-card');
+            variantCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+
+            // Add some dynamic stock updates
+            setInterval(() => {
+                const stockText = document.querySelector('.stock-text');
+                if (stockText) {
+                    const currentStock = parseInt(stockText.textContent.match(/\d+/)[0]);
+                    if (currentStock > 10) {
+                        const newStock = Math.max(10, currentStock - Math.floor(Math.random() * 3));
+                        stockText.textContent = `⚡ Only ${newStock} packs left in stock!`;
+                    }
+                }
+            }, 30000); // Update every 30 seconds
+        });
+
+        // Performance optimization: Throttle scroll events
+        let ticking = false;
+
+        function updateOnScroll() {
+            // Your scroll-based animations here
+            ticking = false;
+        }
+
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(updateOnScroll);
+                ticking = true;
+            }
+        }
+
+        window.addEventListener('scroll', requestTick);
+
+        // Add keyboard navigation support
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                // Close modal if open
+                const modal = document.getElementById('quickViewModal');
+                if (modal.style.display === 'block') {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        });
+
+        // Add mini cart functionality
+        document.getElementById('miniCart').addEventListener('click', () => {
+            if (cart.length === 0) {
+                showToast('Your cart is empty! Add some delicious items.', 'error');
+                return;
+            }
+            
+            let cartSummary = 'Cart Items:\n';
+            let total = 0;
+            
+            cart.forEach(item => {
+                cartSummary += `${item.product}: ${item.quantity} x ₹${item.price}\n`;
+                total += item.price * item.quantity;
+            });
+            
+            cartSummary += `\nTotal: ₹${total}`;
+            alert(cartSummary + '\n\nRedirecting to checkout...');
+            
+            // Here you would typically redirect to checkout page
+            showToast('Redirecting to secure checkout...', 'success');
+        });
+
+        console.log('🌶️ Imli Mix website loaded successfully! Ready to serve some zing!');
+    </script>
+</body>
+</html>
